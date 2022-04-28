@@ -10,4 +10,6 @@ app.use('/', (req,res)=>{
     console.log("you are on root")
 })
 
+
+
 module.exports= app
