@@ -11,9 +11,15 @@ const userSchema= mongoose.Schema({
     },
     adhar:{
         type:Number,
-        unique:true
+        unique:true,
+        required:true
     },
-    date_of_vacination: Date
+    date_of_vacination: {
+        type: Date,
+        default: Date.now()  
+    },
+    state: String
+
 })
 
 const User= mongoose.model('User', userSchema)
